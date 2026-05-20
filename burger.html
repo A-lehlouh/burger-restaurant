@@ -1,0 +1,71 @@
+<html>
+<head>
+    <title>Burger Restaurant</title>
+    <link rel="stylesheet" href="burger.css">
+</head>
+<body>
+        <h1>Burger Restaurant</h1>
+    <div class="container">
+        <h2>Menu</h2>
+        <div class="menu-item">
+            <label>
+                <img src="classic_burger.jpg" alt="Classic Burger">
+                <input type="checkbox" value="5" class="menu-option"> Classic Burger ($5)
+            </label>
+        </div>
+
+        <div class="menu-item">
+            <label>
+                <img src="cheese_burger.jpg" alt="Cheese Burger">
+                <input type="checkbox" value="7" class="menu-option"> Cheese Burger ($7)
+            </label>
+        </div>
+
+        <div class="menu-item">
+            <label>
+                <img src="chicken_burger.jpg" alt="Chicken Burger">
+                <input type="checkbox" value="6" class="menu-option"> Chicken Burger ($6)
+            </label>
+        </div>
+
+        <div class="menu-item">
+            <label>
+                <img src="fries.jpg" alt="Fries">
+                <input type="checkbox" value="4" class="menu-option"> Fries ($4)
+            </label>
+        </div>
+
+        <div class="menu-item">
+            <label>
+                <img src="soft_drink.jpg" alt="Soft Drink">
+                <input type="checkbox" value="2" class="menu-option"> Soft Drink ($2)
+            </label>
+        </div>
+
+        <h3>Discount Code</h3>
+
+        <div style="display: flex; align-items: center;">
+            <input type="text" id="discount-code" placeholder="Enter discount code">
+            <button onclick="calculateTotal()">Calculate Total</button>
+        </div>
+
+        <div class="total" id="total"></div>
+        <a href="#" class="back-to-menu">Back to Menu</a>
+    </div>
+
+    <div class="social-links">
+        <a href="https://www.instagram.com">
+            <img src="instagram_icon.png" alt="Instagram">
+        </a>
+        <a href="https://www.facebook.com">
+            <img src="facebook_icon.png" alt="Facebook">
+        </a>
+        <a href="https://www.twitter.com">
+            <img src="twitter_icon.png" alt="Twitter">
+        </a>
+        
+    </div>
+
+    <script src="burger.js"></script>
+</body>
+</html>
